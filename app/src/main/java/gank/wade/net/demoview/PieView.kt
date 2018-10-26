@@ -22,8 +22,7 @@ import android.view.View
  */
 class PieView : View {
 
-    private val mColors = intArrayOf(0xCCFF00, 0x6495ED, 0xE32636, 0x800000, 0x808000, 0xFF8C69, 0x808080,
-            0xE6B800, 0x7CFC00)
+    private val mColors = intArrayOf(-0x330100, -0x9b6a13, -0x1cd9ca, -0x800000, -0x7f8000, -0x7397, -0x7f7f80, -0x194800, -0x830400)
 
     // 饼状图初始绘制角度
     private var mStartAngle = 0f
