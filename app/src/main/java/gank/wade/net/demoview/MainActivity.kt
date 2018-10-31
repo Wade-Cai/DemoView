@@ -1,7 +1,12 @@
 package gank.wade.net.demoview
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import gank.wade.net.demoview.activity.Bezier2Activity
+import gank.wade.net.demoview.activity.Bezier3Activity
+import gank.wade.net.demoview.activity.PieActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,18 +17,10 @@ class MainActivity : AppCompatActivity() {
         val view = PieView(this)
         setContentView(R.layout.activity_main)
 
-//        val datas = ArrayList<PieData>()
-//        val pieData = PieData("sloop", 60f)
-//        val pieData2 = PieData("sloop", 30f)
-//        val pieData3 = PieData("sloop", 40f)
-//        val pieData4 = PieData("sloop", 20f)
-//        val pieData5 = PieData("sloop", 20f)
-//        datas.add(pieData)
-//        datas.add(pieData2)
-//        datas.add(pieData3)
-//        datas.add(pieData4)
-//        datas.add(pieData5)
-//        view.setData(datas)
+        btn_pie.setOnClickListener{startActivity(Intent(this,PieActivity::class.java))}
+        btn_bezier2.setOnClickListener{startActivity(Intent(this,Bezier2Activity::class.java))}
+        btn_bezier3.setOnClickListener{startActivity(Intent(this, Bezier3Activity::class.java))}
+
 
     }
 }

@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".activity.PieActivity"/>
+        <activity android:name=".activity.Bezier2Activity"/>
+        <activity android:name=".activity.Bezier3Activity"/>
+
+
     </application>
 
 </manifest>
